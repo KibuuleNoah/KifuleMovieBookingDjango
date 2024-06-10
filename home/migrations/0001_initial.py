@@ -7,18 +7,25 @@ class Migration(migrations.Migration):
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Films',
+            name="Films",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('description', models.TextField()),
-                ('pic', models.ImageField(upload_to='pics')),
-                ('special', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("description", models.TextField()),
+                ("pic", models.ImageField(upload_to="pics")),
+                ("special", models.BooleanField(default=False)),
             ],
         ),
     ]
